@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>EL Store</title>
+		<link rel="stylesheet" href="./giaodienform.css" />
+		<link rel="shortcut icon" href="./image/icon.png" type="image/x-icon" />
+		<script
+			src="https://kit.fontawesome.com/e1c5d62921.js"
+			crossorigin="anonymous"
+		></script>
+	</head>
+	<body>
+		<div class="signup">
+			<div class="signup__content">
+				<h1 class="signup__heading">Đăng nhập</h1>
+				<h2 class="signup__caption">Đăng nhập với</h2>
+				<div class="signup-social">
+					<div class="signup-social__item">
+						<i class="fab fa-google signup-social__icon"></i>
+						<span class="signup-social__text">Đăng nhập với Google</span>
+					</div>
+					<div class="signup-social__item">
+						<i class="fab fa-facebook signup-social__icon"></i>
+						<span class="signup-social__text">Đăng nhập với Facebook</span>
+					</div>
+				</div>
+				<form class="signup-form" autocomplete="off" id="form1">
+					<div class="signup-form__row">
+						<div class="signup-form__group form-group">
+							<label for="name" class="signup-form__label form-label">
+								Tên</label
+							>
+							<input
+								type=" text"
+								class="signup-form__input"
+								id="username"
+								class="username"
+								placeholder="Tên"
+								required
+							/>
+							<span class="form-message"></span>
+						</div>
+					</div>
+					<div class="signup-form__group form-group">
+						<label for="password" class="signup-form__label form-label"
+							>Mật khẩu</label
+						>
+						<input
+							type="password"
+							class="signup-form__input form-control"
+							id="password"
+							class="password"
+							minlength="10"
+							placeholder="Mật khẩu"
+						/>
+						<span class="form-message"></span>
+					</div>
+					<div class="signup-form__term">
+						<input type="checkbox" name="" id="term" />
+						<label for="term">Tôi đồng ý với tất cả điều khoản</label>
+					</div>
+					<button class="signup-form__submit" type="submit">
+						<i class="fa fa-arrow-right"></i>
+					</button>
+					<p class="signup-already">
+						Chưa có tài khoản <a href="./giaodiendangki.html">Đăng kí</a>
+					</p>
+				</form>
+			</div>
+			<div class="signup__image">
+				<img src="./image/rocket.jpg" alt="hinh" />
+			</div>
+		</div>
+		<script src="./validate.js"></script>
+		<script>
+			Validator({
+				form: '#form1',
+				errorSelector: '.form-message',
+				rules: [
+					Validator.isRequired('#username'),
+					Validator.isEmail('#email'),
+					Validator.minLength('#password', 6),
+				],
+			});
+		</script>
+	</body>
+</html>

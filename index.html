@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link
+		rel="shortcut icon"
+		href="./image/icon.png"
+		type="image/x-icon"
+	/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+		/>
+		<link rel="stylesheet" href="./index.css" />
+		<script src="./index.js" defer></script>
+		<title>EL Store</title>
+		<link rel="stylesheet" href="./css/animate.css">
+		<link
+		rel="stylesheet"
+		href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+	/>
+	</head>
+	<body class="home" id="home">
+		<header class="primary-header container flex">
+			<div class="header-inner-one flex">
+				<div class="logo flex">
+					<img class="logo-e" src="./image/logo.png" alt="hinh" />
+					
+				</div>
+				<button
+					class="mobile-close-btn"
+					data-visible="false"
+					aria-controls="primary-navigation"
+				>
+					<i class="uil uil-times-circle"></i>
+				</button>
+				<nav>
+					<ul
+						id="primary-navigation"
+						data-visible="false"
+						class="primary-navigation flex"
+					>
+						<li>
+							<a class="fs-100 fs-roboto bold-600" href="./index.html"
+								><span>Trang chủ</span>
+							</a>
+						</li>
+						<li>
+							<a class="fs-100 fs-roboto bold-600" href="./shop.html">	<span>Sản phẩm</span></a>
+							
+							</a>
+						</li>
+						<li>
+							<a class="fs-100 fs-roboto bold-600" href="./about.html">
+								<span>Giới thiệu</span>
+							</a>
+						</li>
+						<li>
+							<a class="fs-100 fs-roboto bold-600" href="./blog.html"
+								><span>Bài viết</span>
+							</a>
+						</li>
+						<li>
+							<a class="fs-100 fs-roboto bold-600" href="./contactus.html"
+								><span>Liên hệ</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- Đăng nhập -->
+			<div class="header-login flex">
+				<a href="./giaodienform.html"><i class="uil uil-user"></i></a>
+				
+				<i class="uil uil-search"></i>
+				<i
+					id="cart-box"
+					aria-controls="cart-icon"
+					class="uil uil-shopping-bag"
+				></i>
+				<!-- Cài đặt giỏ hàng khi click vào icon -->
+				<div id="cart-icon" data-visible="false" class="cart-icon">
+					<div class="shopping flex">
+						<p>Giỏ hàng</p>
+						<i id="cross-btn" class="uil uil-times"></i>
+					</div>
+					<div class="cart bold-800 flex">
+						<i class="uil uil-shopping-cart-alt"></i>
+						<p>Giỏ Hàng Trống</p>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-open-btn"><i class="uil uil-align-right"></i></div>
+		</header>
+		<!-- Banner chính -->
+		<main class="hero-section">
+			<div>
+				<h1 class="fs-200 fs-roboto ">
+					Beats Solo
+					<span class="block lineheight fs-300 bold-900 big-wireless fs-roboto "
+						>Không dây</span
+					><span
+						class="text-white fs-900 uppercase lineheight-2 bold-bolder fs-roboto "
+						>Tai Nghe</span
+					>
+				</h1>
+				<img src="./image/image1.png" alt="" />
+			</div>
+			<div class="hero-inner flex">
+				<div>
+					<button class="large-btn bg-red text-white fs-roboto fs-50">
+						Mua ngay
+					</button>
+				</div>
+				<div class="hero-info">
+					<h4 class="fs-roboto">Mô tả</h4>
+					<p class="fs-roboto">
+						Với tính năng cảm biến, mọi chuyển dộng của bạn đều không ảnh hưởng
+						đến chất lượng tai nghe.
+					</p>
+				</div>
+			</div>
+		</main>
+		<!-- Banner danh sách sản phẩm -->
+		<section class="product-section">
+			<div class="category bg-black grid wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+			animation-duration: 2s;
+			animation-delay: 0.2s;
+			animation-name: fadeInLeft;">
+				<div>
+					<h3 class="text-white fs-50 fs-roboto bold">
+						Tai <span class="block fs-300 fs-roboto bold">Nghe</span
+						><span
+							class="earphone uppercase fs-400 fs-roboto bold-900 lineheight"
+							>Wireless</span
+						>
+					</h3>
+					<button class="prdduct-btn large-btn text-white bg-red fs-roboto">
+						Xem thêm
+					</button>
+				</div>
+				<div class="product-img1">
+					<img src="./image/h.png" alt="" />
+				</div>
+			</div>
+			<div class="category bg-yellow grid wow slideInLeft" data-wow-duration="2s" data-wow-delay="0.2s">
+				<div>
+					<h3 class="text-white fs-200 fs-roboto bold">
+						Thêm <span class="block fs-300 fs-roboto bold">Nhiều</span
+						><span
+							class="earphone uppercase fs-400 fs-roboto bold-900 lineheight"
+							>Phụ kiện</span
+						>
+					</h3>
+					<button
+						class="prdduct-btn large-btn text-yellow bg-white fs-roboto phukien"
+					>
+						Xem thêm
+					</button>
+				</div>
+				<div class="product-img2">
+					<img src="./image/w.png" alt="" />
+				</div>
+			</div>
+			<div class="category bg-red grid wow slideInRight" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+			animation-duration: 2s;
+			animation-delay: 0.2s;
+			animation-name:R fadeInRight;">
+				<div>
+					<h3 class="text-white fs-50 fs-roboto bold">
+						Xu <span class="block fs-300 fs-roboto bold">Hướng</span
+						><span
+							class="earphone uppercase fs-400 fs-roboto bold-900 lineheight"
+							>Laptop</span
+						>
+					</h3>
+					<button class="prdduct-btn large-btn text-red bg-white fs-roboto">
+						Xem thêm
+					</button>
+				</div>
+				<div class="product-img3">
+					<img src="./image/Laptop.png" alt="" />
+				</div>
+			</div>
+			<div class="category bg-gray grid wow slideInLeft"data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+			animation-duration: 2s;
+			animation-delay: 0.2s;
+			animation-name: fadeInLeft;">
+				<div>
+					<h3 class="text-black fs-50 fs-roboto bold">
+						Thiết bị
+						<span class="block fs-300 fs-roboto bold text-black"
+							>Chơi game</span
+						><span
+							class="earphone uppercase fs-400 fs-roboto bold-900 lineheight"
+							>Playstation</span
+						>
+					</h3>
+					<button class="prdduct-btn large-btn text-white bg-red fs-roboto">
+						Mua ngay
+					</button>
+				</div>
+				<div class="product-img4">
+					<img src="./image/gam.png" alt="" />
+				</div>
+			</div>
+			<div class="category bg-green grid wow slideInRight"data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+			animation-duration: 2s;
+			animation-delay: 0.2s;
+			animation-name: fadeInRight;">
+				<div>
+					<h3 class="text-white fs-50 fs-roboto bold">
+						Chơi <span class="block fs-300 fs-roboto bold">Game</span
+						><span
+							class="earphone uppercase fs-400 fs-roboto bold-900 lineheight"
+							>Thực tế ảo</span
+						>
+					</h3>
+					<button
+						class="prdduct-btn large-btn text-green bg-white fs-roboto phukien"
+					>
+						Xem thêm
+					</button>
+				</div>
+				<div class="product-img5">
+					<img src="./image/man2.png" alt="" />
+				</div>
+			</div>
+			<div class="category bg-blue grid wow slideInRight" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+			animation-duration: 2s;
+			animation-delay: 0.2s;
+			animation-name: fadeInRight;">
+				<div>
+					<h3 class="text-white fs-50 fs-roboto bold">
+						Đỉnh <span class="block fs-300 fs-roboto bold">Cao</span
+						><span
+							class="earphone uppercase fs-400 fs-roboto bold-900 lineheight"
+							>Dàn loa</span
+						>
+					</h3>
+					<button
+						class="prdduct-btn large-btn text-blue bg-white fs-roboto phukien"
+					>
+						Xem thêm
+					</button>
+				</div>
+				<div class="product-img6">
+					<img src="./image/mus.png" alt="" />
+				</div>
+			</div>
+		</section>
+		<!-- Phần dịch vụ -->
+		<section class="service-section">
+			<div class="service wow slideInDown" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+			animation-duration: 2s;
+			animation-delay: 0.2s;
+			animation-name: fadeInDown;">
+				<img src="./image/free.svg" alt="" />
+				<div class="service-info">
+					<h3 class="fs-roboto fs-200">Miễn phí giao hàng</h3>
+					<p class="fs-roboto fs-50">Miễn phí trên tất cả đơn hàng</p>
+				</div>
+			</div>
+			<div class="service wow slideInDown" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+			animation-duration: 2s;
+			animation-delay: 0.2s;
+			animation-name: fadeInDown;">
+				<img src="./image/sett.svg" alt="" />
+				<div class="service-info">
+					<h3 class="fs-roboto fs-200">Chứng nhận tin dùng</h3>
+					<p class="fs-roboto fs-50">30 ngày hoàn đổi trả</p>
+				</div>
+			</div>
+			<div class="service wow slideInDown" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+			animation-duration: 2s;
+			animation-delay: 0.2s;
+			animation-name: fadeInDown;">
+				<img src="./image/supt.svg" alt="" />
+				<div class="service-info">
+					<h3 class="fs-roboto fs-200">Hệ thống hỗ trợ 24/7</h3>
+					<p class="fs-roboto fs-50">Sẵn sàng giúp đỡ 24/7</p>
+				</div>
+			</div>
+			<div class="service wow slideInDown" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+			animation-duration: 2s;
+			animation-delay: 0.2s;
+			animation-name: fadeInDown;">
+				<img src="./image/pay.svg" alt="hinh" />
+				<div class="service-info">
+					<h3 class="fs-roboto fs-200">Quy định thanh toán</h3>
+					<p class="fs-roboto fs-50">Mọi loại thẻ được chấp nhân</p>
+				</div>
+			</div>
+		</section>
+		<!-- Khuyến mãi -->
+		<section class="feature-section bg-red wow slideInUp" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+		animation-duration: 2s;
+		animation-delay: 0.2s;
+		animation-name: fadeInUp;">
+			<div class="feature-one grid">
+				<img src="./image/p-1.png" alt="hinh" />
+				<p class="text-white uppercase">20% GIẢM GIÁ</p>
+				<p
+					class="font-size lineheight fs-500 text-white fs-roboto bold-900 uppercase"
+				>
+					black <span class="smile">friday</span>
+				</p>
+				<p class="text-white fs-roboto fs-50">29 tháng 5</p>
+			</div>
+			<div class="feature-info">
+				<h2 class="fs-200 text-white fs-roboto bold-500">Beats Solo Air</h2>
+				<p class="fs-roboto fs-300 bold-800 text-white">Đỉnh cao tai nghe</p>
+				<p class="fs-roboto text-white fs-50">
+					Sản phẩm dẫn đầu xu hướng của thế kỷ 21 với nhiều màu sắc.
+				</p>
+				<button class="prdduct-btn large-btn text-red bg-white fs-roboto">
+					Mua ngay
+				</button>
+			</div>
+		</section>
+		<!-- Sản phẩm bán chạy -->
+		<section class="best-product container wow slideInUp" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+		animation-duration: 2s;
+		animation-delay: 0.2s;
+		animation-name: fadeInUp;">
+			<h2 class="letter-spacing bold-800 fs-roboto">Sản phẩm bán chạy</h2>
+			<p class="fs-roboto fs-100">
+				Những sản phẩm dẫn đầu xu hướng công nghệ hiện nay
+			</p>
+		</section>
+		<!-- Sản phẩm-->
+		<section class="best-Seller wow slideInUp" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+		animation-duration: 2s;
+		animation-delay: 0.2s;
+		animation-name: fadeInUp;">
+			<div class="product grid">
+				<img src="./image/p-2.jpg" alt="hinh" />
+				<p class="fs-roboto bold-500">White EliteBook Tablet 810</p>
+				<p class="fs-roboto bold-500">1.200.000đ</p>
+				<div class="product-details grid bg-red">
+					<i class="text-white uil uil-shopping-cart-alt"></i>
+					<i class="text-white uil uil-heart-alt"></i>
+				</div>
+			</div>
+			<div class="product grid">
+				<img src="./image/p-3.jpg" alt="hinh" />
+				<p class="fs-roboto bold-500">White EliteBook Tablet 810</p>
+				<p class="fs-roboto bold-500">1.400.000đ</p>
+				<div class="product-details grid bg-red">
+					<i class="text-white uil uil-shopping-cart-alt"></i>
+					<i class="text-white uil uil-heart-alt"></i>
+				</div>
+			</div>
+			<div class="product grid">
+				<img src="./image/p-4.jpg" alt="hinh" />
+				<p class="fs-roboto bold-500">Game Console Controller Cable</p>
+				<p class="fs-roboto bold-500">900.000đ</p>
+				<div class="product-details grid bg-red">
+					<i class="text-white uil uil-shopping-cart-alt"></i>
+					<i class="text-white uil uil-heart-alt"></i>
+				</div>
+			</div>
+			<div class="product grid">
+				<img src="./image/p-5.jpg" alt="hinh" />
+				<p class="fs-roboto bold-500">Rocky Mountain</p>
+				<p class="fs-roboto bold-500">1.800.000đ</p>
+				<div class="product-details grid bg-red">
+					<i class="text-white uil uil-shopping-cart-alt"></i>
+					<i class="text-white uil uil-heart-alt"></i>
+				</div>
+			</div>
+			<div class="product grid">
+				<img src="./image/p9.jpg" alt="hinh" />
+				<p class="fs-roboto bold-500">White EliteBook Tablet 810</p>
+				<p class="fs-roboto bold-500">2.000.000đ</p>
+				<div class="product-details grid bg-red">
+					<i class="text-white uil uil-shopping-cart-alt"></i>
+					<i class="text-white uil uil-heart-alt"></i>
+				</div>
+			</div>
+			<div class="product grid">
+				<img src="./image/p-7.jpg" alt="hinh" />
+				<p class="fs-roboto bold-500">Wireless Audio System Multiroom 360</p>
+				<p class="fs-roboto bold-500">1.300.000đ</p>
+				<div class="product-details grid bg-red">
+					<i class="text-white uil uil-shopping-cart-alt"></i>
+					<i class="text-white uil uil-heart-alt"></i>
+				</div>
+			</div>
+			<div class="product grid">
+				<img src="./image/p8.png" alt="hinh" />
+				<p class="fs-roboto bold-500">Wireless Audio System Multiroom 360</p>
+				<p class="fs-roboto bold-500">1.600.000đ</p>
+				<div class="product-details grid bg-red">
+					<i class="text-white uil uil-shopping-cart-alt"></i>
+					<i class="text-white uil uil-heart-alt"></i>
+				</div>
+			</div>
+			<div class="product grid">
+				<img src="./image/p9.jpg" alt="hinh" />
+				<p class="fs-roboto bold-500">Smartwatch 2.0 LTE Wifi</p>
+				<p class="fs-roboto bold-500">1.900.000đ</p>
+				<div class="product-details grid bg-red">
+					<i class="text-white uil uil-shopping-cart-alt"></i>
+					<i class="text-white uil uil-heart-alt"></i>
+				</div>
+			</div>
+		</section>
+		<!-- Khuyến mãi -->
+		<section class="feature-section bg-green wow slideInUp" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+		animation-duration: 2s;
+		animation-delay: 0.2s;
+		animation-name: fadeInUp;">
+			<div class="feature-green feature-one grid">
+				<img src="./image/p12.png" alt="hinh" />
+				<p class="text-white uppercase">20% GIẢM GIÁ</p>
+				<p
+					class="font-size lineheight fs-500 text-white fs-roboto bold-900 uppercase"
+				>
+					BLACK <span class="smile">FRIDAY</span>
+				</p>
+				<p class="text-white fs-roboto fs-50">15 Tháng 5</p>
+			</div>
+			<div class="feature-info">
+				<h2 class="fs-200 text-white fs-roboto bold-500">Apple Watch</h2>
+				<p class="fs-roboto fs-300 bold-800 text-white">
+					Đồng hồ thời thượng
+				</p>
+				<p class="fs-roboto text-white fs-50">
+					Sản phẩm dẫn đầu xu hướng của thế kỷ 21 với nhiều màu sắc.
+				</p>
+				<button class="prdduct-btn large-btn text-green bg-white fs-roboto">
+					Mua ngay
+				</button>
+			</div>
+		</section>
+		<!-- Thông tin gần đây-->
+		<section class="best-product container wow slideInUp "data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+		animation-duration: 2s;
+		animation-delay: 0.2s;
+		animation-name: fadeInUp;">
+			<h2 class="letter-spacing bold-800 fs-roboto">Thông Tin Gần Đây</h2>
+			<p class="fs-roboto fs-100">
+				Những thông tin giúp bạn tự tin hơn khi chọn sản phẩm
+			</p>
+		</section>
+		<!-- Bài viết -->
+		<section class="recent-news grid wow slideInUp" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+		animation-duration: 2s;
+		animation-delay: 0.2s;
+		animation-name: fadeInUp;">
+			<div class="news grid">
+				<img src="./image/news-1.png" alt="hinh" />
+				<div class="fs-roboto fs-100 flex padding-inline">
+					<p>Tháng 1, 2022</p>
+					<p>bởi Hà Nga</p>
+				</div>
+				<h2 class="fs-roboto padding-inline fs-200 blod-600">
+					Cách chọn size đồng hồ
+				</h2>
+				<p class="fs-roboto padding-inline fs-100">
+					Dù bạn mua để sử dụng hay để tặng, thì một chiếc đồng hồ đeo tay chỉ
+					thật sự đẹp khi nó phù hợp...
+				</p>
+			</div>
+
+			<div class="news grid">
+				<img src="./image/news-2.png" alt="hinh" />
+				<div class="fs-roboto fs-100 flex padding-inline">
+					<p>Tháng 2, 2022</p>
+					<p>Bởi Tiến Dũng</p>
+				</div>
+				<h2 class="fs-roboto padding-inline fs-200 blod-600">
+					Cách chọn kính thực tế ảo
+				</h2>
+				<p class="fs-roboto padding-inline fs-100">
+					Một chiếc kính thực tế ảo được lựa chọn dựa trên những tiêu chí quan
+					trọng như sau...
+				</p>
+			</div>
+
+			<div class="news grid">
+				<img src="./image/news-1.png" alt="hinh" />
+				<div class="post-date fs-roboto fs-100 flex padding-inline">
+					<p>Tháng 3, 2022</p>
+					<p>Bởi Duy Hải</p>
+				</div>
+				<h2 class="fs-roboto padding-inline fs-200 blod-600">
+					Cách chọn phụ kiện Apple
+				</h2>
+				<p class="fs-roboto padding-inline fs-100">
+					Theo lời khuyên từ các chuyên gia, người dùng nên sử dụng hàng Zin từ
+					Apple Store...
+				</p>
+			</div>
+		</section>
+		<!-- Footer cuối trang -->
+		<footer>
+			<section class="brands grid wow slideInUp" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+			animation-duration: 2s;
+			animation-delay: 0.2s;
+			animation-name: fadeInUp;">
+				<div>
+					<img src="./image/br-1.png" alt="hinh" />
+				</div>
+				<div>
+					<img src="./image/br-2.png" alt="hinh" />
+				</div>
+				<div>
+					<img src="./image/br-3.png" alt="hinh" />
+				</div>
+				<div>
+					<img src="./image/br-4.png" alt="hinh" />
+				</div>
+				<div>
+					<img src="./image/br-5.png" alt="hinh" />
+				</div>
+			</section>
+			<!-- Footer Menu Nav -->
+			<section class="footer grid wow slideInUp" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+			animation-duration: 2s;
+			animation-delay: 0.2s;
+			animation-name: fadeInUp;">
+				<div class="footer-logo grid">
+					<img class="logo-c" src="./image/logo.png" alt="hinh" />
+					<p class="fs-roboto fs-200">
+						Được phục vụ quý khách là niềm vui lớn đối với chúng tôi và là bước
+						đệm để chúng tôi thành công hơn.
+					</p>
+					<div class="social-media flex">
+						<i class="uil uil-facebook-f"></i>
+						<i class="uil uil-instagram"></i>
+						<i class="uil uil-linkedin"></i>
+						<i class="uil uil-twitter"></i>
+					</div>
+				</div>
+
+				<div class="footer-menu grid">
+					<h3 class="fs-roboto fs-200 bold-800">Tham khảo</h3>
+					<ul>
+						<li>
+							<a class="fs-roboto text-black fs-200" href="./index.html">Trang chủ</a>
+						</li>
+						<li>
+							<a class="fs-roboto text-black fs-200" href="./about.html">Giới thiệu</a>
+						</li>
+						<li>
+							<a class="fs-roboto text-black fs-200" href="./shop.html">Sản phẩm</a>
+						</li>
+						<li>
+							<a class="fs-roboto text-black fs-200" href="./contactus.html">Liên hệ</a>
+						</li>
+					</ul>
+				</div>
+
+				<div class="contact grid">
+					<h3 class="fs-roboto fs-200 bold-800">Liên hệ</h3>
+					<p class="fs-roboto">
+						(+84) 0899331703 43/2 Nơ Trang Long Phường 7 Quận Bình Thạnh
+					</p>
+				</div>
+
+				<div class="emails grid">
+					<h3 class="fs-roboto fs-200 bold-800">
+						Đăng kí để nhận thông báo
+					</h3>
+					<p class="updates fs-roboto fs-300 bold-800">
+						Về cập nhật và các sản phẩm mới
+					</p>
+					<div class="inputField flex bg-gray">
+						<input
+							type="email"
+							placeholder="Nhập Email của bạn"
+							class="fs-roboto bg-gray"
+						/>
+						<button class="bg-red text-white fs-roboto fs-50">Đăng kí</button>
+					</div>
+				</div>
+			</section>
+			<!-- nocopyright -->
+			<section class="copyRight wow slideInUp" data-wow-duration="2s" data-wow-delay="0.2s" style="visibility: visible;
+			animation-duration: 2s;
+			animation-delay: 0.2s;
+			animation-name: fadeInUp;">
+				<p class="c-font fs-roboto fs-200">
+					NoCopyright © 2022 Hai.Dev All Rights Reserved
+				</p>
+				<p class="fs-roboto fs-100 text-align p-top">
+					Privacy Policy . Term Condition
+				</p>
+			</section>
+		</footer>
+		<div class="backtotop">
+			<div class="backtotop__container">
+				<a href="#home"><i class="fa-solid fa-angle-up" id="topBtn"></i></a>
+			</div>
+		</div>
+		<script src="./js/wow.min.js"></script>
+		<script>
+		new WOW().init();
+		</script>
+	</body>
+
+</html>
