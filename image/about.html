@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="./shop.css" />
+		<link rel="stylesheet" href="./index.css" />
+		<link rel="stylesheet" href="./about.css" />
+		<script src="./index.js" defer></script>
+		<script src="./shop.js" defer></script>
+		<link
+		rel="shortcut icon"
+		href="./image/icon.png"
+		type="image/x-icon"
+	/>
+		<link
+			rel="stylesheet"
+			href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+		/>
+		<!-- SWIPERS JS -->
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+		/>
+		<!-- AOS -->
+		<link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+		/>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.min.js"></script>
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/lightgallery@1.8.3/dist/css/lightgallery.min.css"
+		/>
+		<title>EL Store</title>
+	</head>
+	<body class="home">
+		<header class="primary-header container flex" 	>
+			<div class="header-inner-one flex">
+				<div class="logo flex">
+					<img class="logo-e" src="./image/logo.png" alt="hinh" />
+					
+				</div>
+				<button
+					class="mobile-close-btn"
+					data-visible="false"
+					aria-controls="primary-navigation"
+				>
+					<i class="uil uil-times-circle"></i>
+				</button>
+				<nav>
+					<ul
+						id="primary-navigation"
+						data-visible="false"
+						class="primary-navigation flex"
+					>
+						<li>
+							<a class="fs-100 fs-roboto bold-600" href="./index.html"
+								><span>Trang chủ</span>
+							</a>
+						</li>
+						<li>
+							<a class="fs-100 fs-roboto bold-600" href="./shop.html">	<span>Sản phẩm</span></a>
+							
+							</a>
+						</li>
+						<li>
+							<a class="fs-100 fs-roboto bold-600" href="./about.html">
+								<span>Giới thiệu</span>
+							</a>
+						</li>
+						<li>
+							<a class="fs-100 fs-roboto bold-600" href="./blog.html"
+								><span>Bài viết</span>
+							</a>
+						</li>
+						<li>
+							<a class="fs-100 fs-roboto bold-600" href="./contactus.html"
+								><span>Liên hệ</span>
+							</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+			<!-- Đăng nhập -->
+			<div class="header-login flex">
+				<a href="./giaodienform.html"><i class="uil uil-user"></i></a>
+				
+				<i class="uil uil-search"></i>
+				<i
+					id="cart-box"
+					aria-controls="cart-icon"
+					class="uil uil-shopping-bag"
+				></i>
+				<!-- Cài đặt giỏ hàng khi click vào icon -->
+				<div id="cart-icon" data-visible="false" class="cart-icon">
+					<div class="shopping flex">
+						<p>Giỏ hàng</p>
+						<i id="cross-btn" class="uil uil-times"></i>
+					</div>
+					<div class="cart bold-800 flex">
+						<i class="uil uil-shopping-cart-alt"></i>
+						<p>Giỏ Hàng Trống</p>
+					</div>
+				</div>
+			</div>
+			<div class="mobile-open-btn"><i class="uil uil-align-right"></i></div>
+		</header>
+		<!-- Điều hướng -->
+		<section class="shop-feature bg-gray grid" 	data-aos="fade-top"
+		data-aos-duration="2000"
+		data-aos-delay="200">
+			<div>
+				<p class="fs-roboto text-black">
+					Trang chủ <span aria-hidden="true" class="margin">></span> Giới thiệu
+				</p>
+			</div>
+			<h2 class="fs-roboto fs-300 bold-700">Giới thiệu</h2>
+		</section>
+		<!-- Phần chính -->
+		<section class="about-section grid">
+			<div data-aos="fade-right"
+			data-aos-duration="2000"
+			data-aos-delay="200">
+				<img src="./image/about-us.jpg" alt="hinh" />
+			</div>
+			<div class="about-info" data-aos="fade-left"
+			data-aos-duration="2000"
+			data-aos-delay="200">
+				<h3 class="fs-roboto fs-200 text-red">Chào mừng đến EL Store</h3>
+				<h1 class="fs-roboto fs-500 text-black">Chúng tôi là ai?</h1>
+				<p class="fs-roboto fs-100">
+					Là một chuỗi bán lẻ bán các sản phẩm kỹ thuật số, bao gồm: điện thoại
+					di động, máy tính bảng, máy tính xách tay, phụ kiện và dịch vụ. EL
+					Store là chuỗi bán lẻ đầu tiên tại Việt Nam được cấp chứng chỉ ISO
+					9001: 2000 về quản lý chất lượng theo tiêu chuẩn quốc tế. EL Store
+					cũng là chuỗi bán lẻ công nghệ lớn thứ hai tại thị trường Việt Nam<br /><br />
+					Trong nhiều năm qua, với sự nỗ lực không ngừng và trung thành với chủ
+					trương “Tận tụy phục vụ khách hàng”, EL Store coi việc xác định xây
+					dựng và vận hành phong cách phục vụ tốt nhất cho khách hàng là mục
+					tiêu phát triển bền vững, hoàn thiện hình ảnh thân thiện với khách
+					hàng nhằm phục vụ khách hàng là ưu tiên hàng đầu.<br /><br />
+
+					Đặt khách hàng vào trung tâm của mọi suy nghĩ và hành động. FPT Shop
+					đào tạo đội ngũ nhân viên bán hàng có phong cách chuyên nghiệp, nhiệt
+					tình, tận tâm phục vụ khách hàng. Chúng tôi luôn tập trung vào phương
+					thức bán hàng trực tuyến khiêm tốn để khách hàng có thể dễ dàng tìm
+					thấy chúng tôi.
+				</p>
+				<div class="about-btn">
+					<button class="large-btn bg-red text-white fs-roboto fs-50">
+						Xem thêm
+					</button>
+				</div>
+			</div>
+		</section>
+		<div class="about">
+			<div class="about__container">
+				<div
+					class="about__image"
+					data-aos="fade-right"
+					data-aos-duration="2000"
+					data-aos-delay="200"
+				>
+					<img src="./image/about-us1.jpg" alt="hinh" />
+				</div>
+
+				<div
+					class="about__content"
+					data-aos="fade-left"
+					data-aos-duration="2000"
+					data-aos-delay="200"
+				>	
+					<h2>Về EL Store</h2>
+					<h1>Xây dựng<br />Hệ sinh thái <br />Toàn cầu</h1>
+					<p>
+						Sau 23 năm phát triển không ngừng, EL Store hướng đến mục tiêu không chỉ là nơi kinh doanh máy tính mà còn là nơi khách hàng có thể tìm thấy mọi tiện ích công nghệ hiện đại và dịch vụ chất lượng cao.
+					</p>
+
+					<div class="about__title">
+						<div>
+							<i class="fa-solid fa-check"></i> Cung cấp đầy đủ các sản phẩm máy tính, thiết bị công nghệ thông tin.
+						</div>
+						<div>
+							<i class="fa-solid fa-check"></i> Cung cấp giải pháp tích hợp hệ thống công nghệ thông tin.
+						</div>
+						<div>
+							<i class="fa-solid fa-check"></i> Cung cấp giải pháp đặc biệt cho các doanh nghiệp như hội nghị video.
+						</div>
+						<div>
+							<i class="fa-solid fa-check"></i> Mở rộng ngành hàng như các thiết bị điện tử tiêu dùng, thiết bị gia dụng.
+						</div>
+					</div>
+
+					<div class="about__button">Xem thêm</div>
+				</div>
+			</div>
+		</div>
+		<div class="container" 	class="about__content"
+		data-aos="fade-top"
+		data-aos-duration="2000"
+		data-aos-delay="200">
+			<div class="slider">
+				<div class="slider__container">
+					<div class="slider__title">
+						<h2> Tổ chức</h2>
+						<h1>Giá trị cốt lõi</h1>
+					</div>
+					<div class="slider__content">
+						<div class="swiper slider__thumbs">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="slider__pic">
+										<img src="./image/hinh1.jpg" alt="hinh" />
+										<div class="pic__down"></div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="slider__pic">
+										<img src="./image/hinh2.jpg" alt="hinh" />
+										<div class="pic__down"></div>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="slider__pic">
+										<img src="./image/hinh3.jpg" alt="hinh" />
+										<div class="pic__down"></div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="swiper slider__content">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="slider__text">
+										<i class="fa-solid fa-quote-left"></i>
+										<h3 class="name">Nguyễn Duy Hải</h3>
+										<h4>Nhân viên</h4>
+
+										<p>
+											Được phục vụ và mang đến sự hài lòng cho khách hàng là mục tiêu hàng đầu của Nhân viên EL Store.
+										</p>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="slider__text">
+										<i class="fa-solid fa-quote-left"></i>
+										<h3 class="name">Nguyễn Phương Anh</h3>
+										<h4>Nhân viên</h4>
+
+										<p>
+											Tận tụy với khách hàng, tận tâm với nhân viên là cách chúng tôi lan tỏa giá trị tích cực và tinh thần trách nhiệm.
+										</p>
+									</div>
+								</div>
+
+								<div class="swiper-slide">
+									<div class="slider__text">
+										<i class="fa-solid fa-quote-left"></i>
+										<h3 class="name">Meo Meo</h3>
+										<h4>Trợ lý</h4>
+
+										<p>
+											Làm đúng những gì cam kết từ những việc đơn giản nhất, công bằng và công khai minh bạch.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="swiper-pagination"></div>
+							<div class="swiper-button-next"></div>
+							<div class="swiper-button-prev"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer>
+			<section class="brands grid" 	data-aos="fade-top"
+			data-aos-duration="2000"
+			data-aos-delay="200">
+				<div>
+					<img src="./image/br-1.png" alt="hinh" />
+				</div>
+				<div>
+					<img src="./image/br-2.png" alt="hinh" />
+				</div>
+				<div>
+					<img src="./image/br-3.png" alt="hinh" />
+				</div>
+				<div>
+					<img src="./image/br-4.png" alt="hinh" />
+				</div>
+				<div>
+					<img src="./image/br-5.png" alt="hinh" />
+				</div>
+			</section>
+			<!-- Footer Menu Nav -->
+			<section class="footer grid " 	data-aos="fade-top"
+			data-aos-duration="2000"
+			data-aos-delay="200">
+				<div class="footer-logo grid">
+					<img class="logo-c" src="./image/logo.png" alt="hinh" />
+					<p class="fs-roboto fs-200">
+						Được phục vụ quý khách là niềm vui lớn đối với chúng tôi và là bước
+						đệm để chúng tôi thành công hơn.
+					</p>
+					<div class="social-media flex">
+						<i class="uil uil-facebook-f"></i>
+						<i class="uil uil-instagram"></i>
+						<i class="uil uil-linkedin"></i>
+						<i class="uil uil-twitter"></i>
+					</div>
+				</div>
+				<div class="footer-menu grid">
+					<h3 class="fs-roboto fs-200 bold-800">Tham khảo</h3>
+					<ul>
+						<li>
+							<a class="fs-roboto text-black fs-200" href="./index.html">Trang chủ</a>
+						</li>
+						<li>
+							<a class="fs-roboto text-black fs-200" href="./about.html">Giới thiệu</a>
+						</li>
+						<li>
+							<a class="fs-roboto text-black fs-200" href="./shop.html">Sản phẩm</a>
+						</li>
+						<li>
+							<a class="fs-roboto text-black fs-200" href="./contactus.html">Liên hệ</a>
+						</li>
+					</ul>
+				</div>
+				<div class="contact grid">
+					<h3 class="fs-roboto fs-200 bold-800">Liên hệ</h3>
+					<p class="fs-roboto">
+						(+84) 0899331703 43/2 Nơ Trang Long Phường 7 Quận Bình Thạnh
+					</p>
+				</div>
+				<div class="emails grid">
+					<h3 class="fs-roboto fs-200 bold-800">
+						Đăng kí để nhận thông báo
+					</h3>
+					<p class="updates fs-roboto fs-300 bold-800">
+						Về cập nhật và các sản phẩm mới
+					</p>
+					<div class="inputField flex bg-gray">
+						<input
+							type="email"
+							placeholder="Nhập Email của bạn"
+							class="fs-roboto bg-gray"
+						/>
+						<button class="bg-red text-white fs-roboto fs-50">Đăng kí</button>
+					</div>
+				</div>
+			</section>
+			<!-- nocopyright -->
+			<section class="copyRight" >
+				<p class="c-font fs-roboto fs-200">
+					NoCopyright © 2022 Hai.Dev All Rights Reserved
+				</p>
+				<p class="fs-roboto fs-100 text-align p-top">
+					Privacy Policy . Term Condition
+				</p>
+			</section>
+		</footer>
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<!-- Slider -->
+		<script src="./js/slider.js"></script>
+		<!-- Aos -->
+		<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+		<script>
+			AOS.init({
+				once: true,
+				easing: 'ease',
+			});
+		</script>
+	</body>
+</html>
